@@ -11,7 +11,8 @@
     "url": "https://github.com/feross/fromentries/issues"
   },
   "devDependencies": {
-    "standard": "*"
+    "standard": "*",
+    "tape": "^4.9.1"
   },
   "homepage": "https://github.com/feross/fromentries",
   "keywords": [
@@ -37,6 +38,6 @@
     "url": "git://github.com/feross/fromentries.git"
   },
   "scripts": {
-    "test": "standard"
+    "test": "standard && tape test/**/*.js"
   }
 }
