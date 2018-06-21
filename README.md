@@ -19,8 +19,9 @@ npm install fromentries
 
 ## Why this package?
 
-Existing polyfill packages (like [`object.fromentries`](https://github.com/es-
-shims/Object.fromEntries)) pulls in a bunch of dependencies and **adds over 8
+Existing polyfill packages (like
+[`object.fromentries`](https://github.com/es-shims/Object.fromEntries))
+pulls in a bunch of dependencies and **adds over 8
 KB** to the browser bundle size. This allows it work in ES3 environments like
 IE6, but it's also overkill since almost no one supports IE6 anymore.
 
