@@ -19,15 +19,16 @@ npm install fromentries
 
 ## Why this package?
 
-The [`object.fromentries`](https://github.com/es-shims/Object.fromEntries) that
-already existed pulls in a bunch of dependencies and adds over 8KB (!!) to the
-bundle size. This allows it work in ES3 environments like IE6.
+Existing polyfill packages (like [`object.fromentries`](https://github.com/es-
+shims/Object.fromEntries)) pulls in a bunch of dependencies and **adds over 8
+KB** to the browser bundle size. This allows it work in ES3 environments like
+IE6, but it's also overkill since almost no one supports IE6 anymore.
 
 I'd rather not ship tons of extra code to my website visitors. A polyfill for
 this feature can be implemented in a few short lines of code using modern
-language features.
+language features. That's what `fromentries` (this package) does.
 
-This means that this package only works in evergreen browsers like:
+This means that `fromentries` only works in evergreen browsers like:
 
 - Chrome
 - Firefox
@@ -35,7 +36,7 @@ This means that this package only works in evergreen browsers like:
 - Safari
 - Opera
 
-It does not work in browsers like IE11 and older.
+It does not work in browsers like IE11 and older (unless you transpile it first).
 
 ## Usage
 
