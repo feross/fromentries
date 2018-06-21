@@ -46,6 +46,11 @@ const fromEntries = require('fromentries')
 
 const map = new Map([ [ 'a', 1 ], [ 'b', 2 ], [ 'c', 3 ] ])
 const obj = fromEntries(map)
+constole.log(obj) // { a: 1, b: 2, c: 3 }
+
+const searchParams = new URLSearchParams('foo=bar&baz=qux')
+const obj2 = fromEntries(searchParams)
+console.log(obj2) // { foo: 'bar', 'baz': 'qux' }
 ```
 
 ## What is a ponyfill?
