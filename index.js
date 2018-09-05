@@ -2,5 +2,5 @@ module.exports = fromEntries
 
 function fromEntries (iterable) {
   return [...iterable]
-    .reduce((obj, [key, val]) => Object.assign(obj, { [key]: val }), {})
+    .reduce((obj, { 0: key, 1: val }) => Object.assign(obj, { [key]: val }), {})
 }
