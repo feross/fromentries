@@ -11,7 +11,7 @@
     "url": "https://github.com/feross/fromentries/issues"
   },
   "devDependencies": {
-    "standard": "*",
+    "standard": ">=13.0.1",
     "tape": "^4.9.1"
   },
   "homepage": "https://github.com/feross/fromentries",
