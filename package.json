@@ -1,7 +1,7 @@
 {
   "name": "fromentries",
   "description": "Object.fromEntries() ponyfill (in 6 lines)",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "author": {
     "name": "Feross Aboukhadijeh",
     "email": "feross@feross.org",
