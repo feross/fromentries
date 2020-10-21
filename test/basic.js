@@ -21,3 +21,13 @@ test('works on map-like objects like URLSearchParams', t => {
   t.deepEqual(obj, { foo: 'bar', baz: 'qux' })
   t.end()
 })
+
+test('works on generators', t => {
+  const obj = fromEntries((function * generator () {
+    yield ['a', 1]
+    yield ['b', 2]
+    yield ['c', 3]
+  })())
+  t.deepEqual(obj, { a: 1, b: 2, c: 3 })
+  t.end()
+})
