@@ -1,5 +1,3 @@
-declare function fromEntries<Key extends string | number | Symbol, Value>(iterable: Array<[Key, Value]>): {
-    [key: Key]: Value;
-};
+declare function fromEntries<T = any>(entries: Iterable<readonly [PropertyKey, T]>): { [k: string]: T };
 
 export = fromEntries;
